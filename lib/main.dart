@@ -12,11 +12,10 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(393, 852),
       minTextAdapt: true,
-      child: MaterialApp(
-        theme: ThemeData(scaffoldBackgroundColor: AppColors.white),
-        title: 'Flutter Demo',
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      ),
+      child: GetMaterialApp(
+          theme: ThemeData(scaffoldBackgroundColor: AppColors.white),
+          title: 'Flutter Demo',
+          home: const MyHomePage(title: 'Flutter Demo Home Page')),
     );
   }
 }

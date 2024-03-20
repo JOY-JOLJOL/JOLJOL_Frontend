@@ -6,7 +6,7 @@ class BackButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.pop(context),
+      onTap: () => Get.back(),
       child: SvgPicture.asset(
         AppIcons.back,
         height: 20.67.h,

@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_screenutil: ^5.9.0
   flutter_svg: ^2.0.10+1
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
@@ -88,10 +89,10 @@ flutter:
         - asset: assets/fonts/Pretendard-medium.otf
     - family: GothamBold
       fonts:
-        - asset: assets/fonts/GothamBold.ttf
+        - asset: assets/fonts/Gotham-Bold.otf
     - family: GothamBook
       fonts:
-        - asset: assets/fonts/GothamBook.ttf
+        - asset: assets/fonts/Gotham Book.otf
 
   #
   # For details regarding fonts from package dependencies,
