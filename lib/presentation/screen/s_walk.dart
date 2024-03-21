@@ -1,4 +1,6 @@
 import "package:flutter/material.dart";
+import 'package:joljol/common/app_colors.dart';
+import 'package:joljol/common/app_fonts.dart';
 
 class WalkScreen extends StatelessWidget {
   const WalkScreen({super.key});
@@ -6,7 +8,7 @@ class WalkScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFD9D9D9),
+      backgroundColor: AppColors.grayIV,
       body: SafeArea(
         child: Container(
           child: Column(
@@ -45,7 +47,7 @@ class _TopPartState extends State<_TopPart> {
                 alignment: Alignment.topRight,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(7.23),
-                  color: Color(0xFFF5F5F5),
+                  color: AppColors.gray100,
                 ),
                 width: 87.64,
                 height: 30,
@@ -58,7 +60,7 @@ class _TopPartState extends State<_TopPart> {
                       Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(2.41),
-                          color: Color(0xFFB8B8B8),
+                          color: AppColors.gray300,
                         ),
                         width: 40.64,
                         height: 20,
