@@ -4,27 +4,35 @@ import 'package:joljol/common/app_colors.dart';
 
 class AppFonts {
   static TextStyle title = TextStyle(
-      color: AppColors.black,
-      fontSize: 30.sp,
-      height: 1.3,
-      fontFamily: 'PretendardBold');
+    color: AppColors.black,
+    fontSize: 30.sp,
+    height: 1.3,
+    fontFamily: 'PretendardBold',
+    leadingDistribution: TextLeadingDistribution.even,
+  );
 
   static TextStyle part = TextStyle(
-      color: AppColors.black,
-      fontSize: 18.sp,
-      height: 1.4,
-      fontFamily: 'PretendardSemiBold');
+    color: AppColors.black,
+    fontSize: 18.sp,
+    height: 1.4,
+    fontFamily: 'PretendardSemiBold',
+    leadingDistribution: TextLeadingDistribution.even,
+  );
 
   static TextStyle text = TextStyle(
-      color: AppColors.black,
-      fontSize: 16.sp,
-      height: 1.6,
-      fontFamily: 'PretendardMedium');
+    color: AppColors.black,
+    fontSize: 16.sp,
+    height: 1.6,
+    fontFamily: 'PretendardMedium',
+    leadingDistribution: TextLeadingDistribution.even,
+  );
   static TextStyle detail = TextStyle(
-      color: AppColors.black,
-      fontSize: 14.sp,
-      height: 1.6,
-      fontFamily: 'PretendardRegular');
+    color: AppColors.black,
+    fontSize: 14.sp,
+    height: 1.6,
+    fontFamily: 'PretendardRegular',
+    leadingDistribution: TextLeadingDistribution.even,
+  );
   static TextStyle highlight = TextStyle(
       color: AppColors.black,
       fontSize: 30.sp,
