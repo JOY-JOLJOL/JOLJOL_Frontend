@@ -1,7 +1,10 @@
+import 'presentation/screen/s_walk.dart';
 import 'utilities/index.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    home: WalkScreen(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

@@ -33,6 +33,13 @@ class AppFonts {
     fontFamily: 'PretendardRegular',
     leadingDistribution: TextLeadingDistribution.even,
   );
+  static TextStyle detail2 = TextStyle(
+    color: AppColors.black,
+    fontSize: 12,
+    height: 1.6,
+    fontFamily: 'PretendardRegular',
+    leadingDistribution: TextLeadingDistribution.even,
+  );
   static TextStyle highlight = TextStyle(
       color: AppColors.black,
       fontSize: 30.sp,
@@ -46,6 +53,11 @@ class AppFonts {
   static TextStyle standard2 = TextStyle(
       color: AppColors.black,
       fontSize: 13.sp,
+      height: 1,
+      fontFamily: 'GothamBook');
+  static TextStyle standard3 = TextStyle(
+      color: AppColors.black,
+      fontSize: 30,
       height: 1,
       fontFamily: 'GothamBook');
 }
