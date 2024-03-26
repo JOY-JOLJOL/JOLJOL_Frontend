@@ -37,7 +37,7 @@ class AppFonts {
       color: AppColors.black,
       fontSize: 30.sp,
       height: 1,
-      fontFamily: 'GothamBold');
+      fontFamily: 'GothamBook');
   static TextStyle standard1 = TextStyle(
       color: AppColors.black,
       fontSize: 18.sp,
