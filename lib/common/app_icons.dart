@@ -11,4 +11,9 @@ class AppIcons {
   static const plus = 'assets/icon/Icon_Plus.svg';
   static const search = 'assets/icon/Icon_Search.svg';
   static const warning = 'assets/icon/Icon_Warning.svg';
+
+  //친구페이지 아이콘
+  static const secure = 'assets/icon/Icon_Secure.svg';
+  static const trash = 'assets/icon/Icon_Trash.svg';
+  static const userAdd = 'assets/icon/Icon_User_Add.svg';
 }
