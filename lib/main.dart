@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(393, 852),
       minTextAdapt: true,
       child: GetMaterialApp(
+          getPages: router,
           theme: ThemeData(scaffoldBackgroundColor: AppColors.white),
           title: 'Flutter Demo',
           home: const MyHomePage(title: 'Flutter Demo Home Page')),

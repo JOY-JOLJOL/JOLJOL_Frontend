@@ -12,3 +12,7 @@ export '../common/app_icons.dart';
 //widget
 export '../presentation/widget/w_empty_box.dart';
 export '../presentation/widget/w_back_button.dart';
+
+//router
+export 'package:joljol/presentation/routes/routes.dart';
+export 'package:joljol/presentation/routes/routes_path.dart';
