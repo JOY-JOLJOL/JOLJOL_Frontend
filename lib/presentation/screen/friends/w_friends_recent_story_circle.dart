@@ -6,8 +6,10 @@ class FriendsRecentStoryCircleWidget extends StatelessWidget {
     super.key,
     required this.isPlus,
     required this.name,
+    this.isSeen = false,
   });
   final bool isPlus;
+  final bool isSeen;
   final String name;
 
   @override
@@ -28,7 +30,11 @@ class FriendsRecentStoryCircleWidget extends StatelessWidget {
                   shape: OvalBorder(
                       side: BorderSide(
                           width: 2.5.w,
-                          color: isPlus ? AppColors.orange : AppColors.blue1)),
+                          color: isPlus
+                              ? AppColors.orange
+                              : isSeen
+                                  ? AppColors.gray300
+                                  : AppColors.blue1)),
                 ),
                 //TODO: 사진 대체
               ),
