@@ -2,6 +2,7 @@ import 'package:joljol/presentation/widget/w_more_dialog.dart';
 import 'package:joljol/utilities/index.dart';
 import '../../widget/appbar/w_more_app_bar.dart';
 import '../../widget/w_custom_slidar.dart';
+import '../../widget/w_user_title_container.dart';
 import 'w_go_containder.dart';
 
 class FriendsProfileScreen extends StatelessWidget {
@@ -139,18 +140,10 @@ class FriendsProfileScreen extends StatelessWidget {
                       height: 264.h,
                     ),
                   ),
-                  Align(
+                  const Align(
                     alignment: Alignment.bottomCenter,
-                    child: Container(
-                      padding: EdgeInsets.symmetric(
-                          vertical: 3.h, horizontal: 23.5.w),
-                      decoration: BoxDecoration(
-                          color: AppColors.orange,
-                          borderRadius: BorderRadius.circular(31.18)),
-                      child: Text(
-                        "이 구역 최고 날쌘돌이",
-                        style: AppFonts.detail.copyWith(color: AppColors.white),
-                      ),
+                    child: UserTitleContainerWidget(
+                      title: "이 구역 최고 날쌘돌이",
                     ),
                   )
                 ],
