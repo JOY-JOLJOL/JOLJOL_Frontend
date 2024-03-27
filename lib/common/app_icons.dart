@@ -16,4 +16,14 @@ class AppIcons {
   static const secure = 'assets/icon/Icon_Secure.svg';
   static const trash = 'assets/icon/Icon_Trash.svg';
   static const userAdd = 'assets/icon/Icon_User_Add.svg';
+
+  //스낵루틴 아이콘
+  static const alone = 'assets/icon/Icon_alone.svg';
+  static const copy = 'assets/icon/Icon_Copy.svg';
+  static const markFill = 'assets/icon/Icon_Mark_fill.svg';
+  static const mark = 'assets/icon/Icon_Mark.svg';
+  static const pencil = 'assets/icon/Icon_pencil.svg';
+  static const reset = 'assets/icon/Icon_reset.svg';
+  static const withF = 'assets/icon/Icon_withf.svg';
+  static const withN = 'assets/icon/Icon_withn.svg';
 }
