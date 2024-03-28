@@ -48,4 +48,11 @@ class AppFonts {
       fontSize: 13.sp,
       height: 1,
       fontFamily: 'GothamBook');
+
+  static TextStyle mainText = TextStyle(
+    color: AppColors.black,
+    fontSize: 13.sp,
+    height: 1.9,
+    fontFamily: 'PretendardLight',
+  );
 }

@@ -89,6 +89,10 @@ flutter:
     - family: PretendardMedium
       fonts:
         - asset: assets/fonts/Pretendard-medium.otf
+    - family: PretendardLight
+      fonts:
+        - asset: assets/fonts/Pretendard-Light.otf
+
     - family: GothamBold
       fonts:
         - asset: assets/fonts/Gotham-Bold.otf
