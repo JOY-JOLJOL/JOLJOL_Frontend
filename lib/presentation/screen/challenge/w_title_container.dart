@@ -92,17 +92,8 @@ class TitleContainerWidget extends StatelessWidget {
                 color: AppColors.gray300,
                 child: isSelected
                     ? Center(
-                        child: Container(
-                            width: 44.w,
-                            height: 44.w,
-                            decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: AppColors.orange),
-                            child: const Icon(
-                              Icons.bookmark_border_rounded,
-                              color: AppColors.white,
-                            )),
-                      )
+                        child: SvgPicture.asset(AppIcons.title,
+                            width: 44.w, height: 44.w))
                     : const SizedBox(),
               ),
             ),
