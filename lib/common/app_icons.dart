@@ -26,4 +26,14 @@ class AppIcons {
   static const reset = 'assets/icon/Icon_reset.svg';
   static const withF = 'assets/icon/Icon_withf.svg';
   static const withN = 'assets/icon/Icon_withn.svg';
+
+  //홈 아이콘
+  static const alarm = 'assets/icon/Icon_Alarm.svg';
+  static const friend = 'assets/icon/Icon_Friend.svg';
+  static const setting = 'assets/icon/Icon_Setting.svg';
+
+  //활동요약 아이콘
+  static const title = 'assets/icon/Icon_Title.svg';
+  static const insight = 'assets/icon/Icon_Insight.svg';
+  static const filter = 'assets/icon/Icon_Filter.svg';
 }
