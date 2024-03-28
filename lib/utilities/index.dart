@@ -16,3 +16,5 @@ export '../presentation/widget/w_back_button.dart';
 //router
 export 'package:joljol/presentation/routes/routes.dart';
 export 'package:joljol/presentation/routes/routes_path.dart';
+
+export 'package:joljol/utilities/constant.dart';

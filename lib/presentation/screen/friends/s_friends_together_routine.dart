@@ -13,8 +13,7 @@ class FriendsTogetherRoutineScreen extends StatelessWidget {
         children: [
           Expanded(
               child: ListView.separated(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: 22.w, vertical: 32.71.h),
+                  padding: Constants.defaultPadding,
                   itemBuilder: ((context, index) =>
                       const RoutineContainerWidget(
                           inProgress: true,
