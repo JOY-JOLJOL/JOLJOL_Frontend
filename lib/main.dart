@@ -1,3 +1,5 @@
+import 'package:joljol/presentation/screen/home/s_home.dart';
+
 import 'utilities/index.dart';
 
 void main() {
@@ -15,29 +17,7 @@ class MyApp extends StatelessWidget {
       child: GetMaterialApp(
           getPages: router,
           theme: ThemeData(scaffoldBackgroundColor: AppColors.white),
-          title: 'Flutter Demo',
-          home: const MyHomePage(title: 'Flutter Demo Home Page')),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
+          home: const HomeScreen()),
     );
   }
 }
