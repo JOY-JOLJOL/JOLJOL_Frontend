@@ -1,4 +1,5 @@
 import '../../../utilities/index.dart';
+import '../../widget/w_arrow.dart';
 
 class GoContainerWidget extends StatelessWidget {
   const GoContainerWidget({
@@ -29,19 +30,7 @@ class GoContainerWidget extends StatelessWidget {
               style: AppFonts.detail
                   .copyWith(color: black ? AppColors.white : AppColors.black),
             ),
-            Container(
-                width: 28.w,
-                height: 28.w,
-                decoration: BoxDecoration(
-                    color: black ? AppColors.white : AppColors.black,
-                    shape: BoxShape.circle),
-                child: SvgPicture.asset(
-                  AppIcons.go,
-                  fit: BoxFit.contain,
-                  colorFilter: ColorFilter.mode(
-                      black ? AppColors.black : AppColors.white,
-                      BlendMode.srcIn),
-                ))
+            ArrowWidget(black: black)
           ],
         ),
       ),

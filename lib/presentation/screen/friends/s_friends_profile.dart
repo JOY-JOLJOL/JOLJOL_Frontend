@@ -2,7 +2,9 @@ import 'package:joljol/presentation/widget/w_more_dialog.dart';
 import 'package:joljol/utilities/index.dart';
 import '../../widget/appbar/w_more_app_bar.dart';
 import '../../widget/w_custom_slidar.dart';
-import '../../widget/w_user_title_container.dart';
+import '../../widget/w_level.dart';
+import '../home/w_dog_with_title.dart';
+import '../home/w_rounded_container.dart';
 import 'w_go_containder.dart';
 
 class FriendsProfileScreen extends StatelessWidget {
@@ -37,21 +39,11 @@ class FriendsProfileScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  padding:
-                      EdgeInsets.symmetric(vertical: 6.h, horizontal: 15.w),
-                  decoration: BoxDecoration(
-                      color: AppColors.black,
-                      borderRadius: BorderRadius.circular(31.58)),
-                  child: Text(
-                    "Lv 6",
-                    style: AppFonts.standard2.copyWith(color: AppColors.white),
-                  ),
-                ),
-                const RelationIndicatorWidget(
+                LevelWidget(),
+                RelationIndicatorWidget(
                   isFriend: false,
                 )
               ],
@@ -128,61 +120,9 @@ class FriendsProfileScreen extends StatelessWidget {
               ],
             ),
             hEmptyBox(28.h),
-            SizedBox(
-              height: 282.h,
-              child: Stack(
-                children: [
-                  //TODO: 사진 대체
-                  Center(
-                    child: Container(
-                      decoration: const BoxDecoration(color: AppColors.gray300),
-                      width: 301.w,
-                      height: 264.h,
-                    ),
-                  ),
-                  const Align(
-                    alignment: Alignment.bottomCenter,
-                    child: UserTitleContainerWidget(
-                      title: "이 구역 최고 날쌘돌이",
-                    ),
-                  )
-                ],
-              ),
-            ),
+            const DogWithTitleWidget(),
             hEmptyBox(16.h),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                RoundedContainerWidget(
-                    title: "산책 횟수",
-                    wid: Row(
-                      children: [
-                        Text("999 ", style: AppFonts.highlight),
-                        Text("상위 16%", style: AppFonts.text)
-                      ],
-                    )),
-                RoundedContainerWidget(
-                  title: "보유 타이틀",
-                  black: true,
-                  wid: Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(
-                        "999",
-                        style:
-                            AppFonts.highlight.copyWith(color: AppColors.white),
-                      ),
-                      wEmptyBox(5.w),
-                      Text(
-                        "/999",
-                        style:
-                            AppFonts.standard1.copyWith(color: AppColors.white),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
+            const RoundedContainerRowWidget(),
             hEmptyBox(9.h),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -239,41 +179,6 @@ class RelationIndicatorWidget extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class RoundedContainerWidget extends StatelessWidget {
-  const RoundedContainerWidget({
-    super.key,
-    this.black = false,
-    required this.title,
-    required this.wid,
-  });
-  final bool black;
-  final String title;
-  final Widget wid;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 165.w,
-      height: 111.h,
-      padding: EdgeInsets.fromLTRB(16.w, 16.h, 16.w, 25.h),
-      decoration: BoxDecoration(
-          color: black ? AppColors.black : AppColors.gray100,
-          borderRadius: BorderRadius.circular(20)),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            title,
-            style: AppFonts.detail
-                .copyWith(color: black ? AppColors.white : AppColors.black),
-          ),
-          hEmptyBox(15.h),
-          wid,
-        ],
       ),
     );
   }
